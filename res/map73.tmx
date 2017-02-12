@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="24" tileheight="24" nextobjectid="12">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="17" name="objects" tilewidth="24" tileheight="24" tilecount="10" columns="10">
+  <image source="object.png" width="240" height="24"/>
+  <tile id="0">
+   <properties>
+    <property name="animation" value="h.png"/>
+    <property name="animationCount" value="2"/>
+    <property name="category" value="2"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="category" value="4"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="category" value="8"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="category" value="16"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="category" value="32"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="category" type="int" value="44"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="category" type="int" value="64"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="category" type="int" value="66"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="category" type="int" value="22"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Terrain" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDFXAjgNT2zxyMQMD5W5Cdx+19Ixk95ESV9j45MYvIXXEmEnIfaSYhSxPTD6ip/vITUtCSGYis3HZhcu/tHIfupnEhhcxZpFjDiE9g819hNLpQLqPFHspUUfNMpEUe4lVNxjch0svOW0GarcJYAAA7hEEVA==
+  </data>
+ </layer>
+ <layer name="CollisionObj" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDGcgQQDT0x2E2Pj0UGonKWqJDSNKwxKXHnES1FJqFwyIUWgnPeOKkB5RAmrJiTNquo+QWlrYJUSGHlxqaR0WyHqIjSty3QdL9wMdv4TK6YF23ygYekBkoB1AAAAAXhUGfw==
+  </data>
+ </layer>
+</map>

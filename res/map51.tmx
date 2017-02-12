@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="24" tileheight="24" nextobjectid="12">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="17" name="objects" tilewidth="24" tileheight="24" tilecount="10" columns="10">
+  <image source="object.png" width="240" height="24"/>
+  <tile id="0">
+   <properties>
+    <property name="animation" value="h.png"/>
+    <property name="animationCount" value="2"/>
+    <property name="category" value="2"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="category" value="4"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="category" value="8"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="category" value="16"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="category" value="32"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="category" type="int" value="44"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="category" type="int" value="64"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="category" type="int" value="22"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="category" type="int" value="66"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Terrain" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwxmwDgFMqn/oBUbdRxnA5j5C6YAU9ZSmL1zuw6UWl/toBUh1HynqqQHIsW+wuY9UPrrZtC7/KJWnBIy6jzIw0PUqobRGz7qAHDDqPsrAQKc1YjAA5TcEFg==
+  </data>
+ </layer>
+ <layer name="CollisionObj" width="40" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DoAqEB1k9r80e6+wYTEKeyeUIMgzv8hov7hBhQ1VLCH+xhQioY7P4Zdd/gBpTmCVqH36j7BjcAAPDkA5w=
+  </data>
+ </layer>
+</map>
