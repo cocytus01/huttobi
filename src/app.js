@@ -206,7 +206,10 @@ var game = cc.Layer.extend({
             node.clear();
             console.log("touch");
             startTouch = touch.getLocation();
-            node.setPosition(startTouch);
+
+            TouchX = touch.getLocation().x;
+            TouchY = touch.getLocation().y;
+            node.setPosition(TouchX,TouchY);
 
             return true;
           }
@@ -260,7 +263,7 @@ var game = cc.Layer.extend({
 
 
       //矢印はプレイヤーについてくるようにしちゃうゾ☆
-      node.setPosition(this.player.sprite.getPosition().x,this.player.sprite.getPosition().y)
+      //node.setPosition(this.player.sprite.getPosition().x,this.player.sprite.getPosition().y)
 
       space.step(dt);
       for (var i = shapeArray.length - 1; i >= 0; i--) {
@@ -273,7 +276,7 @@ var game = cc.Layer.extend({
       if(world >= 3){
         if(this.player.sprite.getPositionX() > 470){
           this.setPosition(cc.p(-470, 0));
-
+          node.setPosition(TouchX + 470 , TouchY);
           hpText.setPosition(650, 300);
           levelText.setPosition(740, 300);
           scoreText.setPosition(870, 300);
